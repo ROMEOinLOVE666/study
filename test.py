@@ -1,4 +1,4 @@
-a = "Привет"
-b = "Как дела?"
-print(a[1:4:2])
-print(b)
+i = 0
+while i < 3000:
+    print(i)
+    i += 1

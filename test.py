@@ -140,5 +140,11 @@ person = {
 }
 print(person['age'])
 print(person['hobbies'])
-hob = person['hobbies']
-print(hob[2])
+hob = person['hobbies'] # получаем все хобби в переменную
+print(hob[2]) # получаем конкретное значение из переменной
+print(person['hobbies'] [2]) # получаем сразу нужное значение
+print(person['children'] ['son']) # получаем сразу нужное значение по ключу
+person['car'] = 'porsche' # добавляем значение
+person['car'] = {'porsche': 'the best'} # добавляем значение
+person['age'] = 30 # изменяем данные
+print(person)

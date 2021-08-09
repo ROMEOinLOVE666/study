@@ -118,4 +118,27 @@
 # print(letter_list)
 
 #                                                                                Словари
+# Словари это не упорядоченные последовательности различных объектов с доступом по ключу
 
+# dict = {'money': 5000, 'rubli': 10, 'dollar': 900} # словари пишутся в фигурных скобках сначала идет ключ далее его значение
+# print(dict['rubli']) # получаем данные по ключу
+# dict['tugriki'] = 1800 # добавляем элемент в словарь
+# print(dict)
+# dict['dollar'] = 9999 # изменяем данные так же по ключу
+# print(dict)
+# del dict ['tugriki'] # удаляем данные по ключу, если не укажем ключ то тогда удалим всю переменную
+# print(dict)
+# dict.clear() # очишаем переменную со словарем
+# print(dict)
+
+person = {
+    'first_name': 'Kirill',
+    'last_name': "Neizvestnyi",
+    'age': 33,
+    'hobbies': ['footbal', 'singing', 'photo'],
+    'children': {'son': 'Ilya', 'daugter': 'Alena'}
+}
+print(person['age'])
+print(person['hobbies'])
+hob = person['hobbies']
+print(hob[2])

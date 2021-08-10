@@ -135,8 +135,8 @@ person = {
     'first_name': 'Kirill',
     'last_name': "Neizvestnyi",
     'age': 33,
-    'hobbies': ['footbal', 'singing', 'photo'],
-    'children': {'son': 'Ilya', 'daugter': 'Alena'}
+    'hobbies': ['footbal', 'singing', 'photo'], # создаем список с доступом по ключу
+    'children': {'son': 'Ilya', 'daugter': 'Alena'} # создаем словарь с доступом по ключу
 }
 print(person['age'])
 print(person['hobbies'])
@@ -147,4 +147,8 @@ print(person['children'] ['son']) # получаем сразу нужное з�
 person['car'] = 'porsche' # добавляем значение
 person['car'] = {'porsche': 'the best'} # добавляем значение
 person['age'] = 30 # изменяем данные
+person['hobbies'] [0] = 'basketball' # меняем значение по индексу
+print(person.keys()) # получаем все ключи
+print(person.values()) # получаем все значения
+print(person.items()) # получаем все элементы в виде списка
 print(person)

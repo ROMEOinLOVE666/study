@@ -131,24 +131,37 @@
 # dict.clear() # очишаем переменную со словарем
 # print(dict)
 
-person = {
-    'first_name': 'Kirill',
-    'last_name': "Neizvestnyi",
-    'age': 33,
-    'hobbies': ['footbal', 'singing', 'photo'], # создаем список с доступом по ключу
-    'children': {'son': 'Ilya', 'daugter': 'Alena'} # создаем словарь с доступом по ключу
-}
-print(person['age'])
-print(person['hobbies'])
-hob = person['hobbies'] # получаем все хобби в переменную
-print(hob[2]) # получаем конкретное значение из переменной
-print(person['hobbies'] [2]) # получаем сразу нужное значение
-print(person['children'] ['son']) # получаем сразу нужное значение по ключу
-person['car'] = 'porsche' # добавляем значение
-person['car'] = {'porsche': 'the best'} # добавляем значение
-person['age'] = 30 # изменяем данные
-person['hobbies'] [0] = 'basketball' # меняем значение по индексу
-print(person.keys()) # получаем все ключи
-print(person.values()) # получаем все значения
-print(person.items()) # получаем все элементы в виде списка
-print(person)
+# person = {
+#     'first_name': 'Kirill',
+#     'last_name': "Neizvestnyi",
+#     'age': 33,
+#     'hobbies': ['footbal', 'singing', 'photo'], # создаем список с доступом по ключу
+#     'children': {'son': 'Ilya', 'daugter': 'Alena'} # создаем словарь с доступом по ключу
+# }
+# print(person['age'])
+# print(person['hobbies'])
+# hob = person['hobbies'] # получаем все хобби в переменную
+# print(hob[2]) # получаем конкретное значение из переменной
+# print(person['hobbies'] [2]) # получаем сразу нужное значение
+# print(person['children'] ['son']) # получаем сразу нужное значение по ключу
+# person['car'] = 'porsche' # добавляем значение
+# person['car'] = {'porsche': 'the best'} # добавляем значение
+# person['age'] = 30 # изменяем данные
+# person['hobbies'] [0] = 'basketball' # меняем значение по индексу
+# print(person.keys()) # получаем все ключи
+# print(person.values()) # получаем все значения
+# print(person.items()) # получаем все элементы в виде списка
+# print(person)
+
+#                                                                      Кортежи (immutable - не изменяемое содержимое)
+tuple_1 = (1, 2, 3)
+tuple_2 = ('one', 'hello')
+tuple_3 = (3, 2.3, 'three')
+
+tup = (tuple_1[0], 3, tuple_1[2])
+print(tup)
+
+print(tuple_1[1])
+print(tuple_2)
+print(tuple_3)
+

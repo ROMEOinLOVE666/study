@@ -153,15 +153,89 @@
 # print(person.items()) # получаем все элементы в виде списка
 # print(person)
 
-#                                                                      Кортежи (immutable - не изменяемое содержимое)
-tuple_1 = (1, 2, 3)
-tuple_2 = ('one', 'hello')
-tuple_3 = (3, 2.3, 'three')
+#                                                                     Tuple - Кортежи (immutable - не изменяемое содержимое)
+# tuple_1 = (1, 2, 3)
+# tuple_2 = ('one', 'hello')
+# tuple_3 = (3, 2.3, 'three')
 
-tup = (tuple_1[0], 3, tuple_1[2])
-print(tup)
+# tup = (tuple_1[0], 3, tuple_1[2]) # взяли первое значение из переменной + добавили "3" + третье значение
+# print(tup)
 
-print(tuple_1[1])
-print(tuple_2)
-print(tuple_3)
+# print(tuple_1[1])
+# print(tuple_2)
+# print(tuple_3)
 
+# person_tuple = ('Jonn', 'Smith', 1988)
+# a, b, c = person_tuple # распаковываем кортеж в переменные
+# print(a, b, c)
+
+# # .count() служит для определения сколько раз встречается значение в кортеже 
+# t1 = (1, 2, 3, 4, 5, 1, 7, 9, 'privet', 'privet')
+# print(t1.count(1)) # .count(1)  в скобках указываем значение кол-во которых нужно посчитать
+# print(t1.count('privet'))
+# greetings_tuple = ('hi', 'hello', 'hi', 'hey', 'hi')
+# print(greetings_tuple.count('hi'))
+
+# print(t1.index(5)) # .index() получаем индекс значения в кортеже (порядковый номер значения в кортежи)
+# print(greetings_tuple.index('hi')) # если в кортеже содержиться более одного индекса, то будет показан первый по порядку индекс
+
+
+#                                   Sets - Множества (неупорядоченная коллекция уникальных элементов) (в множестве не может быть двух одинаковых элементов)
+
+# rainbow_colors = {'red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'}
+# print(rainbow_colors)
+# print(type(rainbow_colors)) # получаем класс элемента
+
+# empty_set = set() # что бы создать пустое множество пишем set(), если напишем empty_set = {} то будет создан словарь
+# print(type(empty_set))
+
+# number_list = [10, 21, 32, 47, 53] # список
+# text_tuple = ('audi', 'porshe', 'bmw') # кортеж
+# set_list = set(number_list) # преобразовываем список в множество
+# set_tuple = set(text_tuple) # преобразовываем кортеж в множество
+# print(set_list)
+# print(set_tuple)
+
+# set_list.add(333) # добавляем элемент в множество
+# set_tuple.add('hello') # добавляем элемент в множество
+# print(set_list)
+# print(set_tuple)
+# # если добавить повторяющийся элемент в множество то он не будет добавлен
+
+# # если в кортеже или в списке есть повторяющиеся элементы, при преобразовние в множество эти элементы остануться в единствинном экземпляре
+# number_list = [10, 21, 32, 47, 53, 3, 3, 3, 3] # список
+# text_tuple = ('audi', 'porshe', 'bmw', 'hi', 'hi', 'hi') # кортеж
+# set_list = set(number_list) # преобразовываем список в множество
+# set_tuple = set(text_tuple) # преобразовываем кортеж в множество
+# print(set_list)
+# print(set_tuple)
+
+# set_list.pop() # удаляем случайный элемент из множества (элемент возвращается)
+# print(set_list)
+# set_list.remove(10) # удаляем конкретный элемент из множества (элемент не возвращается)
+# set_tuple.remove('audi') # удаляем конкретный элемент из множества (элемент не возвращается) (при попытке удалить элемент которо нет - будет ошибка)
+# print(set_list)
+# print(set_tuple)
+
+# number_list = [10, 21, 32, 47, 53, 3, 3, 3, 3] # список
+# text_tuple = ('audi', 'porshe', 'bmw', 'hi', 'hi', 'hi') # кортеж
+# set_list = set(number_list) # преобразовываем список в множество
+# set_tuple = set(text_tuple) # преобразовываем кортеж в множество
+# a = set_list.pop() # при удалении методом .pop() элемент возвращается при удалении
+# b = set_tuple.remove('audi') # при удалении методом .remove() элемент не возвращается при удалении
+# set_tuple.discard('audi') # при удалении методом .discard() не будет ошибки если элемента не существует, в отличие от .remove()
+# print(a)
+# print(b)
+# print(set_tuple)
+
+# set_tuple.clear() # методом .clear() можно удалить все элементы из множества
+# print(set_tuple)
+
+#                                                 Boolen and comarison operators - Булин значения (Истина или ложь (True или False)) и операторы сравнения
+
+print(1 < 2) # оператор сравнения первое число меньше чем второе?
+print(type(True)) # узнаем тип данных
+print(type(False))
+print('Hello' == 'hello') # оператор сравнения равно ли первое значение второму
+print(1 == 1) # оператор сравнения равно ли первое значение второму
+print(1 != 1) # оператор сравнения НЕ равно ли первое значение второму
